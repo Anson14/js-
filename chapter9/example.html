@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script>
+
+            //style 属性没有任何实用价值！！！！因为需要分离他们
+
+            window.onload = function (){
+                var para = document.getElementById("example");
+                alert( para.nodeName);
+                alert(typeof para.style);   //which means 属性 also is one kind of objec
+                alert("The color is " + para.style.color);
+                para.style.color = "red";
+                alert("The color is "+ para.style.color);
+
+            }
+        </script>
+        <title>Example</title>
+    </head>
+    <body>
+        <p id="example" style = "color: grey; font-family: 'Arial', sans-serif; "  >An example of photograph
+        </p>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Just a title</title>
+</head>
+<body>
+
+	 <!-- <script src="example.js"> -->
+		 <!-- </script> -->
+
+	<p>It is just for test</p>
+	<p title="a gentle reminder"> Don't forget to buy this</p>
+	<ul id="purchase">
+		<li>A tin of beans</li>
+		<li>An Amzon Kindle</li>
+		<li>New IPhone</li>
+	</ul>
+	<script>
+		// alert(document.getElementsByTagName("li").length);
+		// var shopping = document.getElementById("purchase");
+		// var item = shopping.getElementsByTagName("*");
+		// for (var i = 0; i < item.length; i++) {
+			// alert( item[i]);
+		// }
+		// alert(item.length);
+
+		var paras = document.getElementsByTagName("p");
+		for(var i = 0; i < paras.length; i++){
+			if (1){
+				alert(paras[i].getAttribute("title"));
+				paras[i].setAttribute("title", "Hello World");
+				alert(paras[i].getAttribute("title"));
+			}
+		}
+	</script>
+
+</body>
+</html>
