@@ -1,0 +1,15 @@
+
+
+{
+    "libs": [
+        "browser"
+    ],
+    "plugins": {
+        "requirejs": {
+            "baseUrl": "./src",
+            "paths": {
+                "zrender": "bower_components/zrender/src"
+            }
+        }
+    }
+}
