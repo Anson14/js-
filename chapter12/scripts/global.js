@@ -30,6 +30,10 @@ function addClass(element, value) {
     }
 }
 
+function hh() {
+    if ()
+}
+
 function highlightpage() {
     if(!document.getElementsByTagName) return false;
     if (!document.getElementById) return false;
@@ -91,6 +95,7 @@ function moveElement(elementID,final_x,final_y,interval) {
 }
 
 function prepareSlideshow() {
+    alert("hahah");
     if (!document.getElementsByTagName) return false;
     if (!document.getElementById) return false;
     if (!document.getElementById("intro")) return false;
@@ -103,6 +108,12 @@ function prepareSlideshow() {
     preview.setAttribute("alt", "a glimpse of what awaits you");
     slidshow.appendChild(preview);
     insertAfter(slidshow, intro);
+
+    // var frame = document.createElement("img");
+    // frame.setAttribute("src", "images/frame.gif");
+    // frame.setAttribute("alt", " ");
+    // frame.setAttribute("id", "frame");
+    // slidshow.appendChild(frame);
 
     //装逼开始
     var links = intro.getElementsByTagName("a");
